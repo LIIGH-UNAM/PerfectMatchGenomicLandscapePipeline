@@ -35,7 +35,7 @@ S.O. Centos 7 x86_64
 Resources Scheduler: SGE (Sun Grid Engine) 2011.11p1
 Environment Modules: 3.2.10
 Internal Management Network: 1GbE
-Internal Infiniband Network: Infiniband 40Gbps
+Internal Network: Infiniband 40Gbps
 
 ------------
 Requirements
