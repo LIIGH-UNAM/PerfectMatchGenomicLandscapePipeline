@@ -151,7 +151,7 @@ sub main {
         $posGenomeAbsolutoLeft = ($posGenome - ($numberWalk*$numberNucleotides))-1;
     }
     else{
-        $posGenomeAbsolutoLeft = ($posGenome - (($numberWalk*$numberNucleotides))-1)+ (10*($numberWalk-1));
+        $posGenomeAbsolutoLeft = ($posGenome - (($numberWalk*$numberNucleotides)- (10*($numberWalk-1))))-1;
     }
 
     my $posGenomeAbsolutoRight = $posGenome + ($kmerLength-1);
