@@ -207,7 +207,7 @@ print "Concatenating RGSL with jellyfish output\n";
     &waitingForTheCluster($qsubLN);
 
 #Concatenating all chromosomes in a single file
-print "\nCConcatenating all chromosomes in a single file\n";
+print "\nConcatenating all chromosomes in a single file\n";
 
 	system ("cat ${outLN}${pmglId}*_landscape.tab  >> ${outPMGL}${pmglId}_${nameRGSL}_all.tab ");
 
@@ -228,7 +228,7 @@ print "\nPMnCR normalization\n";
 #signature value 
 print "\nsignature value\n";
 
-	system ("echo  perl ${binDir}signatureValue_v1.0.pl -inputfile ${outPMGL}${pmglId}_${nameRGSL}_all_PMnCR.tab  > ${outPMGL}JOBS_signature_value.bash");
+	system ("echo  perl ${binDir}signatureValue_v2.0.pl -inputfile ${outPMGL}${pmglId}_${nameRGSL}_all_PMnCR.tab  > ${outPMGL}JOBS_signature_value.bash");
 
 	system ("perl ${binDir}makeSGE_v1.0.pl -i ${outPMGL}JOBS_signature_value.bash -memory ${memory} ");
 

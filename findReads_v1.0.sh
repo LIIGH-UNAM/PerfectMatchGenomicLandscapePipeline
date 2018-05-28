@@ -45,4 +45,4 @@ cat $6$3_reverseToForward.txt >> $6$3.txt
 
 ##### Executing the catAlignment_v1.0.pl script.
 
-perl $8catAlignment_v1.0.pl -readsFile $6$3.txt -fastqFile $2 -sequence $1 -pmWalkId $3 -rawRgFile $5 -familyFile $7$3.txt -minCountFamily $9 -alignmentFile ${10}$3.txt -kmerLength ${11} -numberWalk ${12} -maxFamily ${13} -seqQueryAdd ${14} 
+perl $8catAlignment_v2.0.pl -readsFile $6$3.txt -fastqFile $2 -sequence $1 -pmWalkId $3 -rawRgFile $5 -familyFile $7$3.txt -minCountFamily $9 -alignmentFile ${10}$3.txt -kmerLength ${11} -numberWalk ${12} -maxFamily ${13} -seqQueryAdd ${14} 

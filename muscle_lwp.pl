@@ -858,7 +858,7 @@ sub client_poll {
 		#Modified by Jair Santigo Garcia Sotelo/Kim Palacios Flores 02/11/2017
 		if ($contRUNNING > 4){
 
-			print STDERR "Invocar nuevo Job\n";
+			print STDERR "Send new Job\n";
 			$jobid = &rest_run( $params{'email'}, $params{'title'}, \%tool_params );
 			print STDERR "JobId: $jobid\n";
 			$contRUNNING = 0;

@@ -91,8 +91,10 @@ sub cutAlignment {
 
         my $trimmedAlignment = $muscleDirFile[$muscleDirFileIndex];
         $trimmedAlignment =~ s/.aln-clustalw.clw//;
+
+        my $fileComparationName = $alignmentDir.$trimmedAlignment;
         
-        open(OUT_FILE_ALIGNMNET, ">".$alignmentDir.$trimmedAlignment) or die("Can't create file");
+        open(OUT_FILE_ALIGNMNET, ">".$fileComparationName) or die("Can't create file");
             print OUT_FILE_ALIGNMNET ">Reference\n";
             print OUT_FILE_ALIGNMNET $new_reference."\n";
             print OUT_FILE_ALIGNMNET ">Query\n";  
