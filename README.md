@@ -28,6 +28,30 @@ Kim Palacios Flores, kimpalaciosflores@gmail.com
 Jair Santiago Garcia Sotelo, jsgarcia@liigh.unam.mx
 
 -------------------------------------------------
+PMGL PIPELINE Versions
+-------------------------------------------------
+Version 1.0 PMGL Pipeline description:
+
+This pipeline is used to reveal signatures of variation embedded in a Perfect Match Genomic Landscape (PMGL), discover the underlying variants, generate a customized Reference Genome, and validate the precise location and nature of the introgressed variants. 
+
+Version 2.0 PMGL Pipeline description:
+
+The following corrections / improvements were made to the PMGL pipeline:
+
+Correction:
+
+1)	The extent of Reference Genome sequence extracted to be aligned with the Query Genome sequence exceeded the size of the Query Genome sequence for alignment extensions number 2 and onwards. This has been corrected in the current PMGL pipeline version such that both sequences are the same length.
+
+Improvements:
+
+1)	Chromosomes in the RGSL structure were incorrectly ordered for reference genomes with more than 19 chromosomes. This has now been corrected and all chromosomes are organized numerically. Also, a regular expression was modified such that more than 99 chromosomes can be scanned for signatures of variation.
+
+2)	A validation step was added to the customization function such that the customization script is halted if no signatures of variation were solved in the previous PMGL pipeline module (module 5: Orchestrates the interpretation and extension of alignments. Discovers the nature of variants). 
+
+3)	The PMGL pipeline was modified such that signature of variation sites that yield a perfect alignment (no underlying variation) can be handled. 
+
+
+-------------------------------------------------
 PMGL PIPELINE
 -------------------------------------------------
 
